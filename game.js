@@ -1,24 +1,26 @@
 
 
 var question1 = prompt('Am I from Seattle?');
-if (question1 === "NO") {
-  alert ('Way to Go');
+if (question1.toUpperCase() === "NO" || question1.toUpperCase() === "N") {
+  alert ('Way to Go!');
 } else {
   alert('Oops, I am from North Carolina');
 }
 
 var question2 = prompt('Do I like dogs?');
-if (question2 === "YES") {
+if (question2.toUpperCase() === "YES" || question2.toUpperCase() === "Y") {
   alert ('Way to Go!');
 } else {
   alert('Mamma Mia');
 }
 var question3 = prompt('Do I have brown eyes?');
-if (question3 === "YES") {
-  alert('Way to Go');
+if (question3.toUpperCase() === "YES" || question3.toUpperCase() === "Y") {
+  alert('Way to Go!');
 } else {
   alert('I think you need glasses');
 }
+
+
 
 console.log('Question 1 response:' + question1);
 console.log('What I am testing in my "if" conditions:' + question1.toUpperCase());
