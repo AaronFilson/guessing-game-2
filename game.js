@@ -23,9 +23,9 @@ function question2() {
   var question2 = prompt('Do I like dogs?');
   if (question2.toUpperCase() === "YES" || question2.toUpperCase() === "Y") {
     numbercorrect++;
-    elTwo.innerHTML = ('Way to Go!');
+    elTwo.textContent = ('Way to Go!');
   } else {
-    elTwo.innerHTML = ('Mamma Mia');
+    elTwo.textContent = ('Mamma Mia');
   }
 }
 
