@@ -5,3 +5,4 @@ Driver: Aaron
 Navigator: Nkiru
 
 Added images and arrays.
+Added CSS styling to the project.

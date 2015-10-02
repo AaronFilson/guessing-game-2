@@ -1,0 +1,22 @@
+.correct {
+  color: green;
+  font-family: cursive;
+  font-size: 20px;
+}
+
+.incorrect {
+  color:red;
+  font-size: 20px;
+  font-family: cursive;
+}
+
+h4 {
+
+  font-size: 20px;
+  font-style: italic;
+}
+
+body {
+
+  background-color: #c8c8c8;
+}

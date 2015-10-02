@@ -24,9 +24,11 @@ function question1() {
   if (question1.toUpperCase() === answers[0] || question1.toUpperCase() === answers[1]) {
     numbercorrect++;
     elOne.innerHTML = (response[0]);
+    elOne.className = ('correct');
     imageOne.innerHTML = (imagepaths[0]);
   } else {
     elOne.innerHTML = (response[1]);
+    elOne.className = ('incorrect');
   }
 }
 
@@ -35,9 +37,11 @@ function question2() {
   if (question2.toUpperCase() === answers[2] || question2.toUpperCase() === answers[3]) {
     numbercorrect++;
     elTwo.innerHTML = (response[0]);
+    elTwo.className = ('correct');
     imageTwo.innerHTML = (imagepaths[0]);
   } else {
     elTwo.innerHTML = (response[2]);
+    elTwo.className = ('incorrect');
   }
 }
 
@@ -46,9 +50,11 @@ function question3() {
   if (question3.toUpperCase() === answers[2] || question3.toUpperCase() === answers[3]) {
     numbercorrect++
     elThree.innerHTML = (response[0]);
+    elThree.className = ('correct');
     imageThree.innerHTML = (imagepaths[0]);
   } else {
     elThree.innerHTML = (response[3]);
+    elThree.className = ('incorrect');
   }
 }
 
@@ -62,7 +68,7 @@ question1();
 
 window.setTimeout(question2, 1000);
 window.setTimeout(question3, 1000);
-window.setTimeout(resultfunc, 1000);
+window.setTimeout(resultfunc, 4000);
 
 
 /*elResult.innerHTML = ('<h1>' + userName + ' got ' + '<br />' + numbercorrect + ' out of 3 questions correct' + '</h1>' ); */
