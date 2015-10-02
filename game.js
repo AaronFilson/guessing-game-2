@@ -9,33 +9,37 @@ var elTwo = document.getElementById('two');
 var elThree = document.getElementById('three');
 var elResult = document.getElementById('results');
 
+var q1 = new Array('Am I from Seattle?', 'Do I like dogs?', 'Do I have brown eyes?');
+var answers = new Array('NO', 'N', 'YES', 'Y');
+var response = new Array('Way to Go!', 'Oops, I am from North Carolina', 'Mamma Mia', 'I think you need glasses');
+
 function question1() {
-  var question1 = prompt('Am I from Seattle?');
-  if (question1.toUpperCase() === "NO" || question1.toUpperCase() === "N") {
+  var question1 = prompt(q1[0]);
+  if (question1.toUpperCase() === answers[0] || question1.toUpperCase() === answers[1]) {
     numbercorrect++;
-    elOne.textContent = ('Way to Go!');
+    elOne.textContent = (response[0]);
   } else {
-    elOne.textContent = ('Oops, I am from North Carolina');
+    elOne.textContent = (response[1]);
   }
 }
 
 function question2() {
-  var question2 = prompt('Do I like dogs?');
-  if (question2.toUpperCase() === "YES" || question2.toUpperCase() === "Y") {
+  var question2 = prompt(q1[1]);
+  if (question2.toUpperCase() === answers[2] || question2.toUpperCase() === answers[3]) {
     numbercorrect++;
-    elTwo.textContent = ('Way to Go!');
+    elTwo.textContent = (response[0]);
   } else {
-    elTwo.textContent = ('Mamma Mia');
+    elTwo.textContent = (response[2]);
   }
 }
 
 function question3() {
-  var question3 = prompt('Do I have brown eyes?');
-  if (question3.toUpperCase() === "YES" || question3.toUpperCase() === "Y") {
+  var question3 = prompt(q1[2]);
+  if (question3.toUpperCase() === answers[2] || question3.toUpperCase() === answers[3]) {
     numbercorrect++
-    elThree.textContent = ('Way to Go!');
+    elThree.textContent = (response[0]);
   } else {
-    elThree.textContent = ('I think you need glasses');
+    elThree.textContent = (response[3]);
   }
 }
 
