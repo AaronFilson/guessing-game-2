@@ -1,21 +1,25 @@
+/*Here we set green for the correct answers*/
 .correct {
   color: green;
   font-family: cursive;
   font-size: 20px;
 }
 
+/*Here we set red for the incorrect answers*/
 .incorrect {
   color:red;
   font-size: 20px;
   font-family: cursive;
 }
 
+/*Styling the h4 headers*/
 h4 {
 
   font-size: 20px;
   font-style: italic;
 }
 
+/*Styling the body to have a background color*/
 body {
 
   background-color: #c8c8c8;
